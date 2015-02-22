@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="description" content="description">
+  <meta name="author" content="Elliott Hindman">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="#">
+
+  <!-- Latest compiled and minified CSS Libraries for Bootstrap-->
+  <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
+  
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+	<!-- LESS CSS -->
+  <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
+</head>
+<body>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Instructions</h4>
+        </div>
+        <div class="modal-body">
+          Click to pop each bubble. Pop them all!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="success centered hide">
+      <p>Great Job! Click Restore to start over!</p>
+      <button class="btn btn-success">Restore</button>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      <div class="col-lg-3">
+        <img src="img/bubble.jpg" class="img-responsive">
+      </div>
+      
+      <div class="col-lg-12 centered">
+        <button class="btn btn-success">Restore</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Instructions
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
